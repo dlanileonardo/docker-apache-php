@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM tutum/apache-php
+FROM ubuntu:14.04
 
 ENV SHELL /bin/bash
 MAINTAINER Odlanier Mendes <dlanileonardo@gmail.com>
