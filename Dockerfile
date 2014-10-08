@@ -16,7 +16,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y install supervisor
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install git
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install apache2
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install libapache2-mod-php5
-RUN DEBIAN_FRONTEND=noninteractive apt-get -y install mysql-server
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install php5-mysql
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install pwgen
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install php-apc
