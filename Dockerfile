@@ -6,3 +6,5 @@
 
 # Pull base image.
 FROM tutum/apache-php
+
+ENV SHELL /bin/bash
