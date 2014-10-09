@@ -1,12 +1,12 @@
 <VirtualHost *:80>
         ServerAdmin webmaster@localhost
 
-        DocumentRoot /var/www/html
+        DocumentRoot /app
         <Directory />
                 Options FollowSymLinks
                 AllowOverride None
         </Directory>
-        <Directory /var/www/html>
+        <Directory /app>
                 Options Indexes FollowSymLinks MultiViews
                 # To make wordpress .htaccess work
                 AllowOverride All
