@@ -12,6 +12,7 @@ MAINTAINER Odlanier Mendes <dlanileonardo@gmail.com>
 
 # Install packages
 RUN apt-get update
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y dist-upgrade
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install supervisor
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install git
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install apache2
@@ -31,5 +32,5 @@ RUN rm -rf /var/lib/mysql/*
 ADD apache_default /etc/apache2/sites-available/000-default.conf
 RUN a2enmod rewrite
 
-EXPOSE 80
-CMD ["/run.sh"]
+# EXPOSE 80
+# CMD ["/run.sh"]
