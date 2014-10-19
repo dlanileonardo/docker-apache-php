@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM ubuntu:14.04
+FROM dockerfile/ubuntu
 
 ENV SHELL /bin/bash
 MAINTAINER Odlanier Mendes <dlanileonardo@gmail.com>
