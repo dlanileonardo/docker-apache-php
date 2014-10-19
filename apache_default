@@ -12,8 +12,7 @@ ServerName localhost
                 Options Indexes FollowSymLinks MultiViews
                 # To make wordpress .htaccess work
                 AllowOverride All
-                Order allow,deny
-                Allow from all
+                Require all granted
         </Directory>
 
         ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
