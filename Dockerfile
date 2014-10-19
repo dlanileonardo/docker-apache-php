@@ -1,5 +1,5 @@
 #
-# MongoDB Dockerfile
+# Apache PHP Dockerfile
 #
 # https://github.com/dockerfile/mongodb
 #
