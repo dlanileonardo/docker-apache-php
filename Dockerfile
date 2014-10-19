@@ -6,9 +6,10 @@
 
 # Pull base image.
 FROM dockerfile/ubuntu
+MAINTAINER Odlanier Mendes <dlanileonardo@gmail.com>
 
 ENV SHELL /bin/bash
-MAINTAINER Odlanier Mendes <dlanileonardo@gmail.com>
+
 
 # Install packages
 RUN apt-get update
