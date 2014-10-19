@@ -31,6 +31,7 @@ RUN rm -rf /var/lib/mysql/*
 
 # config to enable .htaccess
 ADD apache_default /etc/apache2/sites-available/000-default.conf
+ADD ports.conf /etc/apache2/ports.conf
 RUN a2enmod rewrite
 
 # EXPOSE 80
