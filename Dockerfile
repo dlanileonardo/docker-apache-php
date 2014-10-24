@@ -23,6 +23,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y install pwgen
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install php-apc
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install php5-gd
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install php5-mcrypt
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install php5-curl
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install vim
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install nano
 
