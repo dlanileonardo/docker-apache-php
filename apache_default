@@ -9,6 +9,8 @@ ServerName localhost
                 AllowOverride None
         </Directory>
         <Directory /app>
+                PassEnv AZK_MYSQL_PORT
+                PassEnv AZK_MYSQL_HOST
                 Options Indexes FollowSymLinks MultiViews
                 # To make wordpress .htaccess work
                 AllowOverride All

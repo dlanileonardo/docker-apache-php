@@ -36,7 +36,7 @@ RUN rm -rf /var/lib/mysql/*
 ADD apache_default /etc/apache2/sites-available/000-default.conf
 ADD ports.conf /etc/apache2/ports.conf
 ADD php.ini /etc/php5/apache2/php.ini
-RUN a2enmod rewrite
+RUN a2enmod rewrite mod_env
 
 # EXPOSE 80
 # CMD ["/run.sh"]
