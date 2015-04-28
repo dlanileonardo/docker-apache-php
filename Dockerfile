@@ -28,6 +28,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y install php-soap
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install vim
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install nano
 RUN DEBIAN_FRONTEND=noninteractive php5enmod curl apcu gd json mcrypt mysql mysqli opcache pdo pdo_mysql readline
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install bindfs
 
 # Remove pre-installed database
 RUN rm -rf /var/lib/mysql/*
